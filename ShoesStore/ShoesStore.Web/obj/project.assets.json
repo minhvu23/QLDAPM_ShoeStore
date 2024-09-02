@@ -334,6 +334,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.1",
           "ShoesStore.Common": "1.0.0",
           "ShoesStore.DAL": "1.0.0"
         },
@@ -1155,5 +1157,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

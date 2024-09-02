@@ -1,0 +1,16 @@
+# Folders
+bin/
+obj/
+.vs/
+
+# NuGet
+packages/
+packages.lock.json
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+
+# EF Core Migrations (optional)
+Migrations/
