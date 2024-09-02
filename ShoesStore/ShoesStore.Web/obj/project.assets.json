@@ -334,8 +334,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.14",
-          "Pomelo.EntityFrameworkCore.MySql": "5.0.1",
           "ShoesStore.Common": "1.0.0",
           "ShoesStore.DAL": "1.0.0"
         },
