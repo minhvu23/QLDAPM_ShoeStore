@@ -35,6 +35,15 @@ namespace ShoesStore.Web
             services.AddDbContext<qldaContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
                 new MySqlServerVersion(new Version(8, 0, 21))));
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ShoesStore.Web", Version = "v1" });
@@ -92,7 +101,7 @@ namespace ShoesStore.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ShoesStore.Web v1"));
             }
-
+            
             #region -- Swagger --
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -105,6 +114,8 @@ namespace ShoesStore.Web
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseSession();
 
             app.UseAuthorization();
 
