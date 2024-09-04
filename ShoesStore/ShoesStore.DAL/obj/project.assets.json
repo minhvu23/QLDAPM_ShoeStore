@@ -1046,11 +1046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
       "projectName": "ShoesStore.DAL",
-      "projectPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
+      "projectPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1071,8 +1071,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj": {
-              "projectPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj"
+            "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj": {
+              "projectPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj"
             }
           }
         }

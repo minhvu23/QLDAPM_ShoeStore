@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S7H/QTVgRW56gbq2OKg7MRzCvI6JMg7ShfoW21Refh+c/hn+Ttp8J+4BtxqXYw+zhvnbGzheveKgz82/9OBtWg==",
+  "dgSpecHash": "DTmvqqRB0TjMXARG3W2Ozwy8XAh3urGcvZk2ewDmPA+Vyp1Rfu5EPRndT3014RUSteWv0uUAr2Czr9/5dEC1BQ==",
   "success": true,
-  "projectFilePath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

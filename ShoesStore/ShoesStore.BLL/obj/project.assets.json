@@ -1064,11 +1064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
       "projectName": "ShoesStore.BLL",
-      "projectPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
+      "projectPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1089,11 +1089,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj": {
-              "projectPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj"
+            "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj": {
+              "projectPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.Common\\ShoesStore.Common.csproj"
             },
-            "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj": {
-              "projectPath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj"
+            "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj": {
+              "projectPath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.DAL\\ShoesStore.DAL.csproj"
             }
           }
         }
@@ -1141,13 +1141,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

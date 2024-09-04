@@ -215,10 +215,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "5.0.1"
         },
         "runtime": {
-          "ShoesStore.Common.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ShoesStore.Common.dll": {}
         }
       },
       "ShoesStore.DAL/1.0.0": {
@@ -230,10 +227,7 @@
           "Swashbuckle.AspNetCore.SwaggerGen": "6.4.0"
         },
         "runtime": {
-          "ShoesStore.DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "ShoesStore.DAL.dll": {}
         }
       }
     }
