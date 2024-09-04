@@ -3,9 +3,6 @@ bin/
 obj/
 .vs/
 
-# NuGet
-packages/
-packages.lock.json
 
 # User-specific files
 *.user
