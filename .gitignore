@@ -14,3 +14,16 @@ packages.lock.json
 
 # EF Core Migrations (optional)
 Migrations/
+
+# Thư mục tạm thời
+bin/
+obj/
+
+# Cấu hình IDE
+.vs/
+
+# Các tệp cache
+*.cache
+*.log
+*.dgspec.json
+
