@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "liYI/+/r8QTm5tjnvj3mAGm7d+9YclHoqZl/Otv1eGO4UCgbA0d0cHJNL+OKxQEx4kFrFd+eU7N5EE5bzTM3ig==",
+  "dgSpecHash": "cv0vWGxIFzslCaNls5ko2IEkWQnErEqVEiIOMaIJ5AUIaV3a45uAyGFJJ9Q19veX2MkTDrhGDF08T8CoiJcUEw==",
   "success": true,
-  "projectFilePath": "D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Downloads\\QLDAPM_ShoesStore-main\\ShoesStore\\ShoesStore.BLL\\ShoesStore.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -33,12 +33,5 @@
     "C:\\Users\\HP\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

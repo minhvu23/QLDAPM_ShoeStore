@@ -17,10 +17,13 @@ namespace ShoesStore.DAL.Models
         {
         }
 
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<CartItem> CartItems { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderItem> OrderItems { get; set; }
         public virtual DbSet<Payment> Payments { get; set; }
+        public virtual DbSet<PaymentMethod> PaymentMethods { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -29,20 +32,67 @@ namespace ShoesStore.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseMySql("server=localhost;port=3306;database=qlda;user=root;password=171103", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.2.0-mysql"));
+                optionsBuilder.UseMySql("server=localhost;port=3306;database=qlda;user=root;password=Admin@123", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.35-mysql"));
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasCharSet("utf8mb4")
-                .UseCollation("utf8mb4_vi_0900_as_cs");
+                .UseCollation("utf8mb4_unicode_ci");
+
+            modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.ToTable("cart");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.CartId).HasColumnName("cart_id");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.UserId).HasColumnName("user_id");
+            });
+
+            modelBuilder.Entity<CartItem>(entity =>
+            {
+                entity.ToTable("cart_item");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.HasIndex(e => e.CartId, "cart_id");
+
+                entity.HasIndex(e => e.ProductId, "product_id");
+
+                entity.Property(e => e.CartItemId).HasColumnName("cart_item_id");
+
+                entity.Property(e => e.CartId).HasColumnName("cart_id");
+
+                entity.Property(e => e.Price)
+                    .HasPrecision(10, 2)
+                    .HasColumnName("price");
+
+                entity.Property(e => e.ProductId).HasColumnName("product_id");
+
+                entity.Property(e => e.Quantity).HasColumnName("quantity");
+
+                entity.HasOne(d => d.Cart)
+                    .WithMany(p => p.CartItems)
+                    .HasForeignKey(d => d.CartId)
+                    .HasConstraintName("cart_item_ibfk_1");
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.CartItems)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("cart_item_ibfk_2");
+            });
 
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.ToTable("categories");
-
-                entity.UseCollation("utf8mb4_unicode_ci");
 
                 entity.Property(e => e.CategoryId).HasColumnName("category_id");
 
@@ -59,8 +109,6 @@ namespace ShoesStore.DAL.Models
             modelBuilder.Entity<Order>(entity =>
             {
                 entity.ToTable("orders");
-
-                entity.UseCollation("utf8mb4_unicode_ci");
 
                 entity.HasIndex(e => e.UserId, "user_id");
 
@@ -98,8 +146,6 @@ namespace ShoesStore.DAL.Models
             {
                 entity.ToTable("order_items");
 
-                entity.UseCollation("utf8mb4_unicode_ci");
-
                 entity.HasIndex(e => e.OrderId, "order_id");
 
                 entity.HasIndex(e => e.ProductId, "product_id");
@@ -133,8 +179,6 @@ namespace ShoesStore.DAL.Models
             {
                 entity.ToTable("payments");
 
-                entity.UseCollation("utf8mb4_unicode_ci");
-
                 entity.HasIndex(e => e.OrderId, "order_id");
 
                 entity.Property(e => e.PaymentId).HasColumnName("payment_id");
@@ -165,11 +209,22 @@ namespace ShoesStore.DAL.Models
                     .HasConstraintName("payments_ibfk_1");
             });
 
+            modelBuilder.Entity<PaymentMethod>(entity =>
+            {
+                entity.ToTable("payment_methods");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.PaymentMethodId).HasColumnName("payment_method_id");
+
+                entity.Property(e => e.PaymentMethodName)
+                    .HasMaxLength(100)
+                    .HasColumnName("payment_method_name");
+            });
+
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("products");
-
-                entity.UseCollation("utf8mb4_unicode_ci");
 
                 entity.HasIndex(e => e.CategoryId, "category_id");
 
@@ -216,8 +271,6 @@ namespace ShoesStore.DAL.Models
             modelBuilder.Entity<User>(entity =>
             {
                 entity.ToTable("users");
-
-                entity.UseCollation("utf8mb4_unicode_ci");
 
                 entity.HasIndex(e => e.Email, "email")
                     .IsUnique();
