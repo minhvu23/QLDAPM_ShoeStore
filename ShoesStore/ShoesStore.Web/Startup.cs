@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.OpenApi.Models;
+using Sek.Module.Payment.VnPay;
 
 namespace ShoesStore.Web
 {
@@ -54,6 +56,14 @@ namespace ShoesStore.Web
             {
                 endpoints.MapControllers();
             });
+        }
+        public void IConfigureServices(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+            // Các service khác...
+
+            // Đăng ký VnPayService
+            services.AddScoped<VnPayService>();
         }
     }
 }
