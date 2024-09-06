@@ -1,5 +1,13 @@
+# Thư mục và tệp tạm thời của Visual Studio
 .vs/
+
+# Thư mục obj và bin
 obj/
+bin/
+
+# Các loại tệp cache và database
 *.cache
 *.sqlite
+
+# Các tệp cấu hình editor
 *.editorconfig
