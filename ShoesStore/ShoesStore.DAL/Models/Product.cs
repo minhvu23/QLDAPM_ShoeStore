@@ -9,6 +9,7 @@ namespace ShoesStore.DAL.Models
     {
         public Product()
         {
+            CartItems = new HashSet<CartItem>();
             OrderItems = new HashSet<OrderItem>();
         }
 
@@ -23,6 +24,7 @@ namespace ShoesStore.DAL.Models
         public DateTime? UpdatedAt { get; set; }
 
         public virtual Category Category { get; set; }
+        public virtual ICollection<CartItem> CartItems { get; set; }
         public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }

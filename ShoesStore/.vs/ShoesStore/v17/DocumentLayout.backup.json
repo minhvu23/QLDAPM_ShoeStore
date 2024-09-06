@@ -3,24 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|solutionrelative:shoesstore.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EED7F941-459D-48EA-B8F0-0CADEE41D39D}|ShoesStore.BLL\\ShoesStore.BLL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.bll\\loginsvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EED7F941-459D-48EA-B8F0-0CADEE41D39D}|ShoesStore.BLL\\ShoesStore.BLL.csproj|solutionrelative:shoesstore.bll\\loginsvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EED7F941-459D-48EA-B8F0-0CADEE41D39D}|ShoesStore.BLL\\ShoesStore.BLL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.bll\\userssvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EED7F941-459D-48EA-B8F0-0CADEE41D39D}|ShoesStore.BLL\\ShoesStore.BLL.csproj|solutionrelative:shoesstore.bll\\userssvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\searchuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\searchuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\loginrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\loginrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\usersrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\usersrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\qldacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\qldacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\usersrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\usersrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\authrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\authrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|solutionrelative:shoesstore.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.web\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|solutionrelative:shoesstore.web\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9313C416-55B0-41F3-B437-7E8965DE04B6}|ShoesStore.Web\\ShoesStore.Web.csproj|solutionrelative:shoesstore.web\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\dal\\genericrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\dal\\genericrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\loginreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\loginreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\searchuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\searchuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\userreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\userreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.common\\req\\createuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA3A3D51-AB08-42F8-9F5B-280FD1669838}|ShoesStore.Common\\ShoesStore.Common.csproj|solutionrelative:shoesstore.common\\req\\createuserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|c:\\users\\laptop\\qldapm_shoesstore\\shoesstore\\shoesstore.dal\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5744CE0-277B-4EB3-9BFD-F888D6F6366F}|ShoesStore.DAL\\ShoesStore.DAL.csproj|solutionrelative:shoesstore.dal\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,55 +114,166 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "ShoesStore.Web\\Controllers\\RegisterController.cs",
-              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "ShoesStore.Web\\Controllers\\RegisterController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T13:59:11.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UsersRep.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\UsersRep.cs",
-              "RelativeDocumentMoniker": "ShoesStore.DAL\\UsersRep.cs",
-              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\UsersRep.cs",
-              "RelativeToolTip": "ShoesStore.DAL\\UsersRep.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAF4AAAAUAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Product.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T13:43:06.384Z",
+              "WhenOpened": "2024-09-06T19:41:57.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Web\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ShoesStore.Web\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:21:20.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Startup.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Web\\Startup.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Startup.cs",
+              "RelativeToolTip": "ShoesStore.Web\\Startup.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAHcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:17:20.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginSvc.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\LoginSvc.cs",
+              "RelativeDocumentMoniker": "ShoesStore.BLL\\LoginSvc.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\LoginSvc.cs",
+              "RelativeToolTip": "ShoesStore.BLL\\LoginSvc.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:05:36.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\User.cs",
               "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\User.cs",
               "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\User.cs",
               "RelativeToolTip": "ShoesStore.DAL\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T13:18:38.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SearchUserReq.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SearchUserReq.cs",
-              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\SearchUserReq.cs",
-              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SearchUserReq.cs",
-              "RelativeToolTip": "ShoesStore.Common\\Req\\SearchUserReq.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "GenericRep.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\DAL\\GenericRep.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\DAL\\GenericRep.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\DAL\\GenericRep.cs",
+              "RelativeToolTip": "ShoesStore.Common\\DAL\\GenericRep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T13:17:17.984Z",
+              "WhenOpened": "2024-09-06T19:08:15.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthRep.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\AuthRep.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\AuthRep.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\AuthRep.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\AuthRep.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:18:20.452Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRep.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\LoginRep.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\LoginRep.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\LoginRep.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\LoginRep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:02:20.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\RegisterController.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Web\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Web\\Controllers\\RegisterController.cs",
+              "RelativeToolTip": "ShoesStore.Web\\Controllers\\RegisterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:02:22.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginReq.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\LoginReq.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\LoginReq.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\LoginReq.cs",
+              "RelativeToolTip": "ShoesStore.Common\\Req\\LoginReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:05:31.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SimpleReq.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SimpleReq.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\SimpleReq.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SimpleReq.cs",
+              "RelativeToolTip": "ShoesStore.Common\\Req\\SimpleReq.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:05:23.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersRep.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\UsersRep.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\UsersRep.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\UsersRep.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\UsersRep.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:02:20.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserReq.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\UserReq.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\UserReq.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\UserReq.cs",
+              "RelativeToolTip": "ShoesStore.Common\\Req\\UserReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:05:22.931Z"
             },
             {
               "$type": "Document",
@@ -100,10 +283,119 @@
               "RelativeDocumentMoniker": "ShoesStore.BLL\\UsersSvc.cs",
               "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.BLL\\UsersSvc.cs",
               "RelativeToolTip": "ShoesStore.BLL\\UsersSvc.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:25:46.364Z",
+              "WhenOpened": "2024-09-06T19:02:27.072Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "qldaContext.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\qldaContext.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\qldaContext.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\qldaContext.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\qldaContext.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAAjwD4BAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:28.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Order.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:36.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Cart.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:35.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\OrderItem.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:37.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\Payment.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:40.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateUserReq.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\CreateUserReq.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\CreateUserReq.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\CreateUserReq.cs",
+              "RelativeToolTip": "ShoesStore.Common\\Req\\CreateUserReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:19:13.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SearchUserReq.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SearchUserReq.cs",
+              "RelativeDocumentMoniker": "ShoesStore.Common\\Req\\SearchUserReq.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.Common\\Req\\SearchUserReq.cs",
+              "RelativeToolTip": "ShoesStore.Common\\Req\\SearchUserReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T13:17:17.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\CartItem.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:35.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "ShoesStore.DAL\\Models\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\QLDAPM_ShoesStore\\ShoesStore\\ShoesStore.DAL\\Models\\PaymentMethod.cs",
+              "RelativeToolTip": "ShoesStore.DAL\\Models\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:30:39.466Z"
             }
           ]
         }

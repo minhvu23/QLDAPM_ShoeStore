@@ -17,10 +17,13 @@ namespace ShoesStore.DAL.Models
         {
         }
 
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<CartItem> CartItems { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderItem> OrderItems { get; set; }
         public virtual DbSet<Payment> Payments { get; set; }
+        public virtual DbSet<PaymentMethod> PaymentMethods { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -37,6 +40,55 @@ namespace ShoesStore.DAL.Models
         {
             modelBuilder.HasCharSet("utf8mb4")
                 .UseCollation("utf8mb4_vi_0900_as_cs");
+
+            modelBuilder.Entity<Cart>(entity =>
+            {
+                entity.ToTable("cart");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.CartId).HasColumnName("cart_id");
+
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("timestamp")
+                    .HasColumnName("created_at")
+                    .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                entity.Property(e => e.UserId).HasColumnName("user_id");
+            });
+
+            modelBuilder.Entity<CartItem>(entity =>
+            {
+                entity.ToTable("cart_item");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.HasIndex(e => e.CartId, "cart_id");
+
+                entity.HasIndex(e => e.ProductId, "product_id");
+
+                entity.Property(e => e.CartItemId).HasColumnName("cart_item_id");
+
+                entity.Property(e => e.CartId).HasColumnName("cart_id");
+
+                entity.Property(e => e.Price)
+                    .HasPrecision(10, 2)
+                    .HasColumnName("price");
+
+                entity.Property(e => e.ProductId).HasColumnName("product_id");
+
+                entity.Property(e => e.Quantity).HasColumnName("quantity");
+
+                entity.HasOne(d => d.Cart)
+                    .WithMany(p => p.CartItems)
+                    .HasForeignKey(d => d.CartId)
+                    .HasConstraintName("cart_item_ibfk_1");
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.CartItems)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("cart_item_ibfk_2");
+            });
 
             modelBuilder.Entity<Category>(entity =>
             {
@@ -165,6 +217,19 @@ namespace ShoesStore.DAL.Models
                     .HasConstraintName("payments_ibfk_1");
             });
 
+            modelBuilder.Entity<PaymentMethod>(entity =>
+            {
+                entity.ToTable("payment_methods");
+
+                entity.UseCollation("utf8mb4_0900_ai_ci");
+
+                entity.Property(e => e.PaymentMethodId).HasColumnName("payment_method_id");
+
+                entity.Property(e => e.PaymentMethodName)
+                    .HasMaxLength(100)
+                    .HasColumnName("payment_method_name");
+            });
+
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("products");
@@ -250,6 +315,11 @@ namespace ShoesStore.DAL.Models
                 entity.Property(e => e.PhoneNumber)
                     .HasMaxLength(20)
                     .HasColumnName("phone_number");
+
+                entity.Property(e => e.Role)
+                    .IsRequired()
+                    .HasMaxLength(10)
+                    .HasColumnName("role");
 
                 entity.Property(e => e.UpdatedAt)
                     .HasColumnType("timestamp")

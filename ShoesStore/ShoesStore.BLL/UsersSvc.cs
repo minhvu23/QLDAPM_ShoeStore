@@ -12,12 +12,15 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ShoesStore.BLL
 {
     public class UsersSvc : GenericSvc<UsersRep, User>
     {
+        
+
         UsersRep req = new UsersRep();
         private UsersRep usersRep;
         public UsersSvc()
@@ -53,6 +56,16 @@ namespace ShoesStore.BLL
         public SingleRsp CreateUser(CreateUserReq userReq)
         {
             var res = new SingleRsp();
+            if (!IsValidEmail(userReq.Email))
+            {
+                res.SetError("Invalid Email Format");
+                return res;
+            }
+            if (!IsValidPhoneNumber(userReq.PhoneNumber))
+            {
+                res.SetError("Invalid Phone Number Format");
+                return res;
+            }
             User user = new User();
             user.Username = userReq.Username;
             user.Email = userReq.Email;
@@ -60,6 +73,7 @@ namespace ShoesStore.BLL
             user.Fullname = userReq.Fullname;
             user.Address = userReq.Address;
             user.PhoneNumber = userReq.PhoneNumber;
+            user.Role = "user";
             user.CreatedAt = DateTime.Now;
             user.UpdatedAt = user.CreatedAt;
             res = req.CreateUser(user);
@@ -125,6 +139,42 @@ namespace ShoesStore.BLL
             };
             return res;
         }
+        #endregion
+
+        #region -- Validations --
+
+        private bool IsValidEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                var emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                return Regex.IsMatch(email, emailPattern);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+                return false;
+
+            try
+            {
+                var phonePattern = @"^[+]?[0-9]{10,15}$";
+                return Regex.IsMatch(phoneNumber, phonePattern);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         #endregion
     }
 }
