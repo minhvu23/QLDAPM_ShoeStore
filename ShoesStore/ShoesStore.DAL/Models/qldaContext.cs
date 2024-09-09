@@ -316,11 +316,6 @@ namespace ShoesStore.DAL.Models
                     .HasMaxLength(20)
                     .HasColumnName("phone_number");
 
-                entity.Property(e => e.Role)
-                    .IsRequired()
-                    .HasMaxLength(10)
-                    .HasColumnName("role");
-
                 entity.Property(e => e.UpdatedAt)
                     .HasColumnType("timestamp")
                     .ValueGeneratedOnAddOrUpdate()

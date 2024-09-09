@@ -27,7 +27,6 @@ namespace ShoesStore.Web.Controllers
                 var user = (User)res.Data;
                 HttpContext.Session.SetInt32("UserId", user.UserId);
                 HttpContext.Session.SetString("LoggedInUser", user.Username);
-                HttpContext.Session.SetString("UserRole", user.Role);
                 return Ok(res);
             }
             else

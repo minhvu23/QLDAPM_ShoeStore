@@ -1,6 +1,5 @@
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.deps.json
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.dll
-D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ref\ShoesStore.Common.dll
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.pdb
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\ShoesStore.Common.csproj.AssemblyReference.cache
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\ShoesStore.Common.GeneratedMSBuildEditorConfig.editorconfig
@@ -26,3 +25,8 @@ C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.runtimeconfig.json
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.runtimeconfig.dev.json
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\ShoesStore.Common.genruntimeconfig.cache
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.runtimeconfig.json
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\bin\Debug\net5.0\ShoesStore.Common.runtimeconfig.dev.json
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\ShoesStore.Common.sourcelink.json
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\refint\ShoesStore.Common.dll
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.Common\obj\Debug\net5.0\ShoesStore.Common.genruntimeconfig.cache

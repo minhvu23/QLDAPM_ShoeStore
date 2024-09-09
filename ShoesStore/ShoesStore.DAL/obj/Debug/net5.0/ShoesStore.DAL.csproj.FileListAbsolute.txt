@@ -2,7 +2,6 @@ D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.DAL.d
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.DAL.runtimeconfig.json
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.DAL.runtimeconfig.dev.json
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.DAL.dll
-D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ref\ShoesStore.DAL.dll
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.DAL.pdb
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.Common.dll
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\bin\Debug\net5.0\ShoesStore.Common.pdb
@@ -11,7 +10,6 @@ D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.G
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.AssemblyInfoInputs.cache
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.AssemblyInfo.cs
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.csproj.CoreCompileInputs.cache
-D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.csproj.CopyComplete
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.dll
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ref\ShoesStore.DAL.dll
 D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.pdb
@@ -35,3 +33,6 @@ C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ref
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.pdb
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.genruntimeconfig.cache
 C:\Users\LAPTOP\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ref\ShoesStore.DAL.dll
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesStore.DAL.sourcelink.json
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\ShoesSto.F1A2C179.Up2Date
+D:\QLDAPM_ShoesStore\ShoesStore\ShoesStore.DAL\obj\Debug\net5.0\refint\ShoesStore.DAL.dll

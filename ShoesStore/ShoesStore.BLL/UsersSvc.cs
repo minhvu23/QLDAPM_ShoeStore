@@ -73,7 +73,6 @@ namespace ShoesStore.BLL
             user.Fullname = userReq.Fullname;
             user.Address = userReq.Address;
             user.PhoneNumber = userReq.PhoneNumber;
-            user.Role = "user";
             user.CreatedAt = DateTime.Now;
             user.UpdatedAt = user.CreatedAt;
             res = req.CreateUser(user);
