@@ -15,6 +15,30 @@ namespace ShoesStore.DAL
         {
             return All.Where(p => p.CategoryId == categoryId).ToList();
         }
+        public IEnumerable<Product> GetProductsSortedByPriceAscending()
+        {
+            return All.OrderBy(p => p.Price).ToList();
+        }
+
+        public IEnumerable<Product> GetProductsSortedByPriceDescending()
+        {
+            return All.OrderByDescending(p => p.Price).ToList();
+        }
+
+        public IEnumerable<Product> GetProductsByName(String name)
+        {
+            return All.Where(p => p.Name.Contains(name)).ToList();
+        }
+
+        public IEnumerable<Product> GetNewestProducts()
+        {
+            return All.OrderByDescending((p) => p.UpdatedAt).ToList();
+        }
+
+        public IEnumerable<Product> GetProductsByPriceRange(decimal lowest, decimal highest)
+        {
+            return All.Where(p => p.Price >= lowest && p.Price <= highest).OrderBy(p => p.Price).ToList();
+        }
 
         public SingleRsp CreateProduct(Product product)
         {

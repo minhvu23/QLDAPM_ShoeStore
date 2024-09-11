@@ -37,7 +37,7 @@ namespace ShoesStore.Web.Controllers
             return Ok(res);
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public IActionResult GetAllProducts()
         {
             var res = new SingleRsp();
@@ -45,7 +45,29 @@ namespace ShoesStore.Web.Controllers
             return Ok(res);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("sorted-by-price-ascending")]
+        public IActionResult GetProductsSortedByPriceAscending()
+        {
+            var products = _productSvc.GetProductsSortedByPriceAscending();
+            return Ok(products);
+        }
+        
+        [HttpGet("sorted-by-price-descending")]
+        public IActionResult GetProductsSortedByPriceDescending()
+        {
+            var products = _productSvc.GetProductsSortedByPriceDescending();
+            return Ok(products);
+        }
+
+        [HttpGet("find/{name}")]
+        public IActionResult GetProductsByName(String name)
+        {
+            var res = new SingleRsp();
+            var products = _productSvc.GetProductsByName(name);
+            return Ok(products);
+        }
+
+        [HttpGet("find/{id}")]
         public IActionResult GetProductById(int id)
         {
             var res = new SingleRsp();
@@ -61,7 +83,23 @@ namespace ShoesStore.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPost]
+        [HttpGet("get-newest-products")]
+        public IActionResult GetNewestProducts()
+        {
+            var res = new SingleRsp();
+            var products = _productSvc.GetNewestProducts();
+            return Ok(products);
+        }
+
+        [HttpGet("get-products-from-{lowest}-to-{highest}")]
+        public IActionResult GetNewestProducts(decimal lowest, decimal highest)
+        {
+            var res = new SingleRsp();
+            var products = _productSvc.GetProductsByPriceRange(lowest, highest);
+            return Ok(products);
+        }
+
+        [HttpPost("Create")]
         public IActionResult CreateProduct(string name, string description, decimal price, int quantity, int? categoryId, string imageUrl)
         {
             if (!AuthRep.IsUserLoggedIn(HttpContext))
@@ -76,7 +114,7 @@ namespace ShoesStore.Web.Controllers
             return Ok(res);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update/{id}")]
         public IActionResult UpdateProduct(int id, string name, string description, decimal price, int quantity, int? categoryId, string imageUrl)
         {
             if (!AuthRep.IsUserLoggedIn(HttpContext))
@@ -91,7 +129,7 @@ namespace ShoesStore.Web.Controllers
             return Ok(res);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult DeleteProduct(int id)
         {
             if (!AuthRep.IsUserLoggedIn(HttpContext))

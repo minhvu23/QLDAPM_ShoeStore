@@ -24,6 +24,31 @@ namespace ShoesStore.BLL
             return _productRep.GetProductsByCategoryId(categoryId);
         }
 
+        public IEnumerable<Product> GetProductsSortedByPriceAscending()
+        {
+            return _productRep.GetProductsSortedByPriceAscending();
+        }
+
+        public IEnumerable<Product> GetProductsSortedByPriceDescending()
+        {
+            return _productRep.GetProductsSortedByPriceDescending();
+        }
+
+        public IEnumerable<Product> GetProductsByName(String name)
+        {
+            return _productRep.GetProductsByName(name);
+        }
+
+        public IEnumerable<Product> GetNewestProducts()
+        {
+            return _productRep.GetNewestProducts();
+        }
+
+        public IEnumerable<Product> GetProductsByPriceRange(decimal lowest, decimal highest)
+        {
+            return _productRep.GetProductsByPriceRange(lowest, highest);
+        }
+
         public SingleRsp CreateProduct(string name, string description, decimal price, int quantity, int? categoryId, string imageUrl)
         {
             var res = new SingleRsp();
