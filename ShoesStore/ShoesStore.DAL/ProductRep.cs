@@ -3,6 +3,7 @@ using ShoesStore.Common.Rsp;
 using ShoesStore.DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,9 +26,31 @@ namespace ShoesStore.DAL
             return All.OrderByDescending(p => p.Price).ToList();
         }
 
-        public IEnumerable<Product> GetProductsByName(String name)
+        public IEnumerable<Product> GetProductsByName(string keyword)
         {
-            return All.Where(p => p.Name.Contains(name)).ToList();
+            // Giải mã URL (ví dụ: "gi%C3%A0y%20Nike" -> "giày Nike")
+            string decodedName = Uri.UnescapeDataString(keyword);
+
+            // Tìm kiếm trong database sản phẩm có tên chứa chuỗi đã giải mã
+            return All.Where(p => p.Name.Contains(decodedName)).ToList();
+        }
+
+        // Hàm chuẩn hóa chuỗi (loại bỏ dấu tiếng Việt)
+        private string RemoveDiacritics(string text)
+        {
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
         public IEnumerable<Product> GetNewestProducts()

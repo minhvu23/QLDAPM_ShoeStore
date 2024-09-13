@@ -3,10 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using ShoesStore.BLL;
 using ShoesStore.Common.Rsp;
 using ShoesStore.DAL;
+using ShoesStore.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace ShoesStore.Web.Controllers
 {
@@ -67,7 +69,7 @@ namespace ShoesStore.Web.Controllers
             return Ok(products);
         }
 
-        [HttpGet("find/{id}")]
+        [HttpGet("find/{id:int}")]
         public IActionResult GetProductById(int id)
         {
             var res = new SingleRsp();
