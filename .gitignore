@@ -1,0 +1,9 @@
+# Visual Studio/Build generated files
+.vs/
+bin/
+obj/
+*.dll
+*.pdb
+*.cache
+*.suo
+*.dtbcache.v2
