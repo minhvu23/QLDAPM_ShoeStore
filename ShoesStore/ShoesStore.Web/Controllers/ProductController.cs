@@ -21,20 +21,39 @@ namespace ShoesStore.Web.Controllers
         }
 
         [HttpGet("category/{categoryId}")]
-        public IActionResult GetProductsByCategoryId(int categoryId)
+        public IActionResult GetProductsByCategory(int categoryId)
         {
             var res = new SingleRsp();
-            var products = _productSvc.GetProductsByCategoryId(categoryId);
+            var products = _productSvc.GetProductsByCategory(categoryId);
+
             if (products != null && products.Any())
             {
                 res.Data = products;
             }
             else
             {
-                res.SetError("No products found for the specified category.");
+                res.SetError($"No products found in category {categoryId}.");
+            }
+
+            return Ok(res);
+        }
+
+        [HttpGet("search")]
+        public IActionResult SearchProducts([FromQuery] string q, [FromQuery] string type, [FromQuery] int pageNumber = 1)
+        {
+            var res = new SingleRsp();
+            var products = _productSvc.SearchProducts(q, type, pageNumber); // Thêm pageNumber
+            if (products != null && products.Any())
+            {
+                res.Data = products;
+            }
+            else
+            {
+                res.SetError("No products found with the specified criteria.");
             }
             return Ok(res);
         }
+
 
         [HttpGet]
         public IActionResult GetAllProducts()

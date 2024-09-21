@@ -2,37 +2,12 @@
 using ShoesStore.Common.Rsp;
 using ShoesStore.DAL.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShoesStore.DAL
 {
-    public class ProductRep : GenericRep<qldaContext, Product>
+    public class CategoryRep : GenericRep<qldaContext, Category>
     {
-
-        public IEnumerable<Product> GetProductsByCategory(int categoryId)
-        {
-            var products = Context.Products.Where(p => p.CategoryId == categoryId).ToList();
-            return products;
-        }
-
-        public IEnumerable<Product> SearchProducts(string keyword, string type)
-        {
-            var query = All.AsQueryable();
-
-            if (!string.IsNullOrWhiteSpace(keyword))
-            {
-                // Sử dụng ToLower() để thực hiện so sánh không phân biệt chữ hoa/chữ thường
-                query = query.Where(p => p.Name.ToLower().Contains(keyword.ToLower()));
-            }
-
-            return query.ToList();
-        }
-
-
-        public SingleRsp CreateProduct(Product product)
+        public SingleRsp CreateCategory(Category category)
         {
             var res = new SingleRsp();
             using (var context = new qldaContext())
@@ -41,7 +16,7 @@ namespace ShoesStore.DAL
                 {
                     try
                     {
-                        var p = context.Products.Add(product);
+                        context.Categories.Add(category);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -55,7 +30,7 @@ namespace ShoesStore.DAL
             return res;
         }
 
-        public SingleRsp UpdateProduct(Product product)
+        public SingleRsp UpdateCategory(Category category)
         {
             var res = new SingleRsp();
             using (var context = new qldaContext())
@@ -64,7 +39,7 @@ namespace ShoesStore.DAL
                 {
                     try
                     {
-                        var p = context.Products.Update(product);
+                        context.Categories.Update(category);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -78,7 +53,7 @@ namespace ShoesStore.DAL
             return res;
         }
 
-        public SingleRsp DeleteProduct(Product product)
+        public SingleRsp DeleteCategory(Category category)
         {
             var res = new SingleRsp();
             using (var context = new qldaContext())
@@ -87,7 +62,7 @@ namespace ShoesStore.DAL
                 {
                     try
                     {
-                        var p = context.Products.Remove(product);
+                        context.Categories.Remove(category);
                         context.SaveChanges();
                         tran.Commit();
                     }
@@ -101,5 +76,4 @@ namespace ShoesStore.DAL
             return res;
         }
     }
-
 }

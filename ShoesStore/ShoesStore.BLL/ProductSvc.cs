@@ -18,11 +18,35 @@ namespace ShoesStore.BLL
         {
             _productRep = new ProductRep();
         }
-
-        public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
+        public IEnumerable<Product> SearchProducts(string keyword, string type, int pageNumber = 1)
         {
-            return _productRep.GetProductsByCategoryId(categoryId);
+            var query = All.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                query = query.Where(p => p.Name.ToLower().Contains(keyword.ToLower()));
+            }
+
+            // Xác định số lượng kết quả dựa trên 'type'
+            int pageSize = type == "more" ? 10 : 5;
+
+            // Thực hiện phân trang
+            var products = query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return products;
         }
+
+        public IEnumerable<Product> GetProductsByCategory(int categoryId)
+        {
+            var products = All.Where(p => p.CategoryId == categoryId).ToList();
+            return products;
+        }
+            
+
+
 
         public SingleRsp CreateProduct(string name, string description, decimal price, int quantity, int? categoryId, string imageUrl)
         {

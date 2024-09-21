@@ -11,6 +11,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.1" />
+    <PackageReference Include="Sek.Module.Payment.VnPay.AspNetCore" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
