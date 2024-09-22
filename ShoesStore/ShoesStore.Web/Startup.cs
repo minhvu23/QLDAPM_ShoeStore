@@ -28,6 +28,17 @@ namespace ShoesStore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowReactApp",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3001") // Your React app URL
+                               .AllowAnyHeader()
+                               .AllowAnyMethod()
+                               .AllowCredentials();
+                    });
+            });
 
             services.AddControllers();
 
@@ -110,6 +121,8 @@ namespace ShoesStore.Web
                 c.SwaggerEndpoint("/swagger/v2/swagger.json", "API v2.0");
             });
             #endregion
+
+            app.UseCors("AllowReactApp");
 
             app.UseHttpsRedirection();
 
