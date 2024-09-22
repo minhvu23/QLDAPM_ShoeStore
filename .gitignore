@@ -1,9 +1,39 @@
-# Visual Studio/Build generated files
+# Thư mục và tệp tạm thời của Visual Studio
 .vs/
-bin/
+
+# Thư mục obj và bin
 obj/
-*.dll
-*.pdb
+bin/
+
+# Các loại tệp cache và database
 *.cache
-*.suo
-*.dtbcache.v2
+*.sqlite
+
+# Các tệp cấu hình editor
+*.editorconfig
+
+#UI
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
