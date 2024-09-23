@@ -5,35 +5,51 @@
 obj/
 bin/
 
-# Các loại tệp cache và database
+# Các tệp liên quan đến Visual Studio
+/.vs/
+ShoesStore/**/*.suo
+ShoesStore/**/.user
+ShoesStore/**/*.sln.docstates
+
+# Thư mục bin và obj cho toàn bộ dự án
+/ShoesStore/**/bin/
+/ShoesStore/**/obj/
+/ShoesStore/**/*.pdb
+
+# Các tệp cache và cấu hình tạm thời
+/ShoesStore/**/.dtbcache.v2
+/ShoesStore/**/applicationhost.config
+/ShoesStore/**/DocumentLayout.backup.json
+/ShoesStore/**/DocumentLayout.json
+
+# Loại bỏ tệp SQLite và các tệp cache
 *.cache
 *.sqlite
 
-# Các tệp cấu hình editor
+# Cấu hình Editor
 *.editorconfig
 
-#UI
-
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
+# Node.js
+/node_modules/
 /.pnp
 .pnp.js
 
-# testing
+# Testing và Coverage
 /coverage
 
-# production
+# Production Build
 /build
 
-# misc
-.DS_Store
+# Tệp môi trường
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Log và Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
