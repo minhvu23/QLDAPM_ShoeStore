@@ -6,7 +6,7 @@ import classNames from 'classnames/bind';
 
 import * as searchServices from '~/apiServices/searchServices';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-import AccountItem from '~/components/AccountItem';
+import ProductItem from '~/components/ProductItem';
 import { SearchIcon } from '~/components/Icons';
 import { useDebounce } from '~/hooks';
 import styles from './Search.module.scss';
@@ -58,9 +58,9 @@ function Search() {
             render={(attrs) => (
                 <div className={cx('search-result')} tabIndex="-1" {...attrs}>
                     <PopperWrapper>
-                        <h4 className={cx('search-title')}>Accounts</h4>
+                        <h4 className={cx('search-title')}>Shoes</h4>
                         {searchResult.map((result) => (
-                            <AccountItem key={result.id} data={result} />
+                            <ProductItem key={result.id} data={result} />
                         ))}
                     </PopperWrapper>
                 </div>
@@ -71,7 +71,7 @@ function Search() {
                 <input
                     ref={inputRef}
                     value={searchValue}
-                    placeholder="Search accounts and videos"
+                    placeholder="Search products"
                     spellCheck={false}
                     onChange={(e) => setSearchValue(e.target.value)}
                     onFocus={() => setShowResult(true)}

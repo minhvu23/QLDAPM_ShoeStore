@@ -1,5 +1,7 @@
+import Product from '~/components/Product';
+
 function Home() {
-    return <h2>Home page</h2>;
+    return <Product />;
 }
 
 export default Home;

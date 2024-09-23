@@ -4,22 +4,22 @@ import {
     faCircleQuestion,
     faCoins,
     faEarthAsia,
-    faEllipsisVertical,
     faGear,
     faKeyboard,
     faSignOut,
     faUser,
+    faHeart,
+    faCartShopping,
+    faEllipsisVertical,
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-
-import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
-import Menu from '~/components/Popper/Menu';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
-import Image from '~/components/Image';
 import Search from '../Search';
+import Menu from '~/components/Popper/Menu';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -44,13 +44,9 @@ const MENU_ITEMS = [
         },
     },
     {
-        icon: <FontAwesomeIcon icon={faCircleQuestion} />,
-        title: 'Feedback and help',
-        to: '/feedback',
-    },
-    {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
-        title: 'Keyboard shortcuts',
+        icon: <FontAwesomeIcon icon={faGear} />,
+        title: 'Settings',
+        to: '/settings',
     },
 ];
 
@@ -73,16 +69,6 @@ function Header() {
             title: 'View profile',
             to: '/@hoaa',
         },
-        {
-            icon: <FontAwesomeIcon icon={faCoins} />,
-            title: 'Get coins',
-            to: '/coin',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faGear} />,
-            title: 'Settings',
-            to: '/settings',
-        },
         ...MENU_ITEMS,
         {
             icon: <FontAwesomeIcon icon={faSignOut} />,
@@ -95,42 +81,41 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="Tiktok" />
+                <Link to={'/'}>
+                    <img className={cx('logo')} src={images.logo} alt="Tiktok" />
+                </Link>
 
                 <Search />
 
                 <div className={cx('actions')}>
                     {currentUser ? (
-                        <>
-                            <Tippy delay={[0, 50]} content="Upload video" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <UploadIcon />
-                                </button>
-                            </Tippy>
-                            <Tippy delay={[0, 50]} content="Message" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <MessageIcon />
-                                </button>
-                            </Tippy>
-                            <Tippy delay={[0, 50]} content="Inbox" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <InboxIcon />
-                                    <span className={cx('badge')}>12</span>
-                                </button>
-                            </Tippy>
-                        </>
+                        <></>
                     ) : (
                         <>
-                            <Button text>Upload</Button>
-                            <Button primary>Log in</Button>
+                            <Tippy elay={[0, 50]} content="Login" placement="bottom">
+                                <button className={cx('more-btn')}>
+                                    <FontAwesomeIcon icon={faUser} />
+                                </button>
+                            </Tippy>
                         </>
                     )}
+                    <Tippy elay={[0, 50]} content="Favourite" placement="bottom">
+                        <button className={cx('more-btn')}>
+                            <FontAwesomeIcon icon={faHeart} />
+                        </button>
+                    </Tippy>
+
+                    <Tippy elay={[0, 50]} content="Cart" placement="bottom">
+                        <button className={cx('more-btn')}>
+                            <FontAwesomeIcon icon={faCartShopping} />
+                        </button>
+                    </Tippy>
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <Image
+                            <img
                                 className={cx('user-avatar')}
-                                src="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
+                                src="https://i.pinimg.com/564x/16/b2/e2/16b2e2579118bf6fba3b56523583117f.jpg"
                                 alt="Nguyen Van A"
                             />
                         ) : (
