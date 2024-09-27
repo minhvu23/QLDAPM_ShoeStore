@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './ProductDetails.module.scss';
 import * as productDetail from '~/apiServices/productDetail';
+import * as cartService from '~/apiServices/cartService';
 
 const cx = classNames.bind(styles);
 
@@ -22,6 +23,32 @@ function ProductDetails() {
         fetchProductDetail();
     }, [productId]);
 
+    // Hàm xử lý thêm sản phẩm vào giỏ hàng
+    const handleAddToCart = async () => {
+        try {
+            console.log('Button clicked!'); // Xác nhận sự kiện onClick
+            console.log('Product:', product); // Kiểm tra dữ liệu sản phẩm
+            if (!product) {
+                throw new Error('Product not found');
+            }
+
+            // Giả sử cartId là 1, bạn có thể thay đổi theo logic thực tế
+            const cartId = 1;
+            const quantity = 1;
+            const price = product.price;
+
+            // Gọi API addToCart với đầy đủ thông tin
+            const result = await cartService.addToCart(cartId, product.id, quantity, price);
+
+            console.log('Add to cart result:', result); // Kiểm tra phản hồi
+            if (result) {
+                alert(`${product.name} has been added to the cart!`);
+            }
+        } catch (error) {
+            console.error('Error adding to cart: ', error);
+        }
+    };
+
     if (!product) {
         return <p>Loading...</p>; // Hiển thị loading nếu sản phẩm chưa được tải
     }
@@ -39,7 +66,10 @@ function ProductDetails() {
                 <p className={cx('quantity')}>Quantity: {product.quantity}</p>
 
                 <button className={cx('btn-buy')}>Buy</button>
-                <button className={cx('btn-cart')}>Add to cart</button>
+                {/* Nút thêm vào giỏ hàng */}
+                <button className={cx('btn-cart')} onClick={handleAddToCart}>
+                    Add to cart
+                </button>
             </div>
         </div>
     );

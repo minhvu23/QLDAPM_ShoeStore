@@ -7,7 +7,7 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 import ProductDetail from '~/pages/ProductDetail';
-
+import Cart from '~/pages/Cart';
 // Public routes
 const publicRoutes = [
     { path: '/', component: Home },
@@ -15,6 +15,8 @@ const publicRoutes = [
     { path: '/profile', component: Profile },
     { path: '/Product/:productId', component: ProductDetail, layout: HeaderOnly },
     { path: '/search', component: Search, layout: null },
+    { path: '/Cart', component: Cart},
+    
 ];
 
 const privateRoutes = [];
